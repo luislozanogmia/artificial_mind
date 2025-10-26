@@ -1,0 +1,12 @@
+# AX Executor - Minimal Dependencies
+# Python 3.9+ required, macOS 10.14+ required
+
+# PyObjC frameworks (macOS automation)
+pyobjc-core>=10.0
+pyobjc-framework-Cocoa>=10.0
+pyobjc-framework-Quartz>=10.0
+pyobjc-framework-ApplicationServices>=10.0
+
+# Clipboard + keyboard fallbacks
+pyperclip>=1.8.2
+pyautogui>=0.9.54

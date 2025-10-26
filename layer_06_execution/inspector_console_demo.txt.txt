@@ -1,0 +1,93 @@
+# Showing examples of console logs for the ax_executor
+
+# Example 1 -----full menu-------
+⚙️ AX Executor Interactive Mode
+==================================
+
+Available Elements:
+  [0]  AXButton      search
+
+Select element index [default: 0]: 0
+
+Actions:
+  1. click
+  2. click-if-match
+Select action [1-click, 2-click-if-match] [default: click]: 1
+Show detailed diagnostics? [y/N]: y
+
+[INFO] Executing selected action...
+
+🎯 Using element #0 of 1: AXButton • search
+[INFO] schema version: 1.0
+🧼 L0: Cold start – cleared prior state
+📦 L0: app=ChatGPT pid=98106 | window_title=ChatGPT
+🎯 L0: Primary resolver found pid=98106
+✅ L0: App/Window resolved — pid=98106
+🪪 L1: Identity
+📦 app: current=ChatGPT | recorded=ChatGPT → ✅ pass
+🪟 window: current=ChatGPT | recorded=ChatGPT → ✅ pass
+🖥️ frontmost: ❌ no
+🖥️ active screen: Built-in Retina Display id=1 bounds={'x': 0.0, 'y': 0.0, 'w': 1470.0, 'h': 956.0}
+📐 window_frame (live): (-1.0, 37.0, 601.0, 830.0)
+🔄 App is not frontmost. Bringing to front...
+✅ App activation passed
+⚠️ App activation still not frontmost after retry.
+
+🧪 L2: Window projection
+📐 current origin: (-1.0, 37.0) | recorded origin: (-1.0, 37.0)
+📐 current size: (601.0, 830.0) | recorded size: (601.0, 830.0)
+🔀 Δ=(+0.0, +0.0) 🔎 scale=(×1.000, ×1.000) using=fractions → ✅ pass
+🎯 L2: window transform computed. Target reprojection deferred to L3.
+🎯 reprojected from element frame → (276.8, 824.2)
+🎯 L3: final chosen point (276.75, 824.25)
+[context] Validation mode: strict
+
+🧪 L3: Preflight
+🎯 chosen (preflight) point: (276.8, 824.2) mismatches=0
+🦋 L3: Perfect preflight match → skipping L4-L7 pipeline
+✅ L3: Direct execution → (276.8, 824.2)
+
+✅ Execution successful!
+
+# Example 1 -----log only-------
+🎯 Using element #0 of 2: AXRadioButton • open editors
+🧼 L0: Cold start – cleared prior state
+📦 L0: app=Code pid=80560 | window_title=ax_executor.py — artificial_mind
+🎯 L0: Primary resolver found pid=80560
+✅ L0: App/Window resolved — pid=80560
+⚠️ L1: App name mismatch ignored — PID verified, continuing.
+    Expected app='ax_executor.py — artificial_mind'
+    Found app='code'
+🪪 L1: Identity
+📦 app: current=Code | recorded=ax_executor.py — artificial_mind → ✅ pass
+🪟 window: current=ax_executor.py — artificial_mind | recorded=ax_executor.py — artificial_mind → ✅ pass
+🖥️ frontmost: ✅ yes
+🖥️ active screen: Built-in Retina Display id=1 bounds={'x': 0.0, 'y': 0.0, 'w': 1470.0, 'h': 956.0}
+📐 window_frame (live): (0.0, 37.0, 1470.0, 830.0)
+
+🧪 L2: Window projection
+📐 current origin: (0.0, 37.0) | recorded origin: (0.0, 37.0)
+📐 current size: (1470.0, 830.0) | recorded size: (1470.0, 830.0)
+🔀 Δ=(+0.0, +0.0) 🔎 scale=(×1.000, ×1.000) using=fractions → ✅ pass
+🎯 L2: window transform computed. Target reprojection deferred to L3.
+🎯 reprojected from element frame → (24.0, 336.0)
+🎯 L3: final chosen point (24.0, 336.0)
+[context] Validation mode: strict
+
+🧪 L3: Preflight
+🎯 chosen (preflight) point: (24.0, 336.0) mismatches=2
+Recorded AX element: open editors | Live AX element:  | mismatches=2
+[MICRO] neighbor refinement → point=(24.0, 336.0) mismatches=1
+[MICRO] source=neighbor final_point=(24.0, 336.0) mismatches=1
+🧬 L4: candidates=[('activation_point', '(0.0, 956.0)'), ('frame_center', '(24.0, 336.0)'), ('validated_point', '(24.0, 336.0)')]
+[L4] Best candidate chosen: frame_center at (24.0, 336.0) with 1 mismatches.
+
+[ADAPT] L4b: entering strict full-window search (no scope).
+[ADAPT/BFS] Search complete: total_visited=263, strict_pool=1, best_score=0.50
+[ADAPT] CHOSEN: role=AXRadioButton label=open editors frame=(0.0, 312.0, 48.0, 48.0)
+[ADAPT] visited=263 best_score=1.00 strict_ok=True
+[ADAPT] found role=AXRadioButton label=open editors title=Open Editors frame=(0.0, 312.0, 48.0, 48.0) axpress=False
+[ADAPT] Bad activation_point (0.0, 956.0), using frame-based logic
+[ADAPT] Strict match: biased click at (9.6, 336.0) within frame (0.0, 312.0, 48.0, 48.0)
+
+✅ Execution successful!
