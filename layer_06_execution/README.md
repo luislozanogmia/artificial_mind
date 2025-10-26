@@ -142,18 +142,7 @@ Press **Ctrl+C** to save and exit.
 
 ### 4. Replay with Validation
 ```bash
-# Dry run (validation only, no click)
-python test_ax_execute.py --hover --index 0
-
-# Safe execution (click only if validation passes)
-python test_ax_execute.py --click-if-match
-
-# Force execution with retries
-python test_ax_execute.py --click --escalate
-
-# Show detailed L0-L7 diagnostics
-python test_ax_execute.py --hover --diag
-```
+python test_ax_execute.py
 
 **Example output:**
 ```
@@ -174,14 +163,7 @@ python test_ax_execute.py --hover --diag
 
 ## 🤝 Contributing
 
-AX Executor is research-grade software. Contributions welcome for:
-
-- Additional macOS version support (10.14–15.x)
-- Enhanced element detection strategies
-- OCR/visual fallback integration (L7 Vision)
-- Cross-app compatibility testing
-
-See [CONTRIBUTING.md](#) for guidelines.
+AX Executor is research-grade software. At this stage, contributions are limited — please reach out first at luis@mia-labs.com.
 
 ---
 
@@ -189,20 +171,11 @@ See [CONTRIBUTING.md](#) for guidelines.
 
 **MIT License** with attribution requirement.
 
-Copyright © 2025 Luis Lozano
+© 2025 Luis Lozano — released under the MIT License
 
 Permission is hereby granted to use, copy, modify, and distribute this software with proper attribution to the Artificial Mind project.
 
 See [LICENSE](LICENSE) for full terms.
-
----
-
-## 🙏 Acknowledgments
-
-Built as part of the **Artificial Mind** research project—a 6-layer framework for building reliable, interpretable AI agents.
-
-- **Research Team:** [Luis Lozano](https://github.com/luislozanogmia)
-- **Framework:** [Artificial Mind](https://github.com/luislozanogmia/artificial_mind)
 
 ---
 
