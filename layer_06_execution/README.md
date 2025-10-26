@@ -168,10 +168,7 @@ python test_ax_execute.py --hover --diag
 ---
 
 ## 📚 Learn More
-
-- **[INSTALL.md](INSTALL.md)** – Complete installation and troubleshooting guide
 - **[Artificial Mind White Paper](https://github.com/luislozanogmia/artificial_mind)** – Full 6-layer architecture overview
-- **[API Documentation](#)** – Coming soon: `inspect_step()` and `execute_step()` reference
 
 ---
 
