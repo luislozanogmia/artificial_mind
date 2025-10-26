@@ -24,13 +24,12 @@ SOFTWARE.
 
 ATTRIBUTION REQUIREMENT:
 
-When redistributing this software or modified versions of it, please:
-1. Retain this license file unmodified when redistributing the AX Executor component
-2. Acknowledge "AX Executor from the Artificial Mind framework by Luis Lozano"
-   in any documentation, README, or credits section
-3. Link to the original repository: https://github.com/luislozanogmia/artificial_mind/tree/main/layer_06_execution
 
-This software is part of the Artificial Mind research project: a 6-layer 
-framework for building reliable, interpretable AI agents.
+When redistributing or referencing this software (in full or in part):
 
-For the complete framework: https://github.com/luislozanogmia/artificial_mind
+1. Retain this license file unmodified.
+2. Acknowledge: “Based on the Artificial Mind framework by Luis Lozano.”
+3. Include a link to the official repository:
+   https://github.com/luislozanogmia/artificial_mind
+
+This attribution helps maintain transparency across forks and derivative works.
