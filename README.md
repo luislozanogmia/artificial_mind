@@ -5,7 +5,7 @@ A modular agentic AI framework for building reflection-first, validation-driven 
 **Open-source implementation of all six modular layers of the Artificial Mind:**  
 Perception • Grounding • Validation • System Identity • Expression • Execution.
 
-Each layer is designed to be **plug-and-play**, allowing developers to integrate only the components they need into their own **agentic AI systems**.
+Each layer is a complete, working engine. For example The AX Executor handles the **how** (clicking, typing, launching apps with full validation). You handle the **what and when** (integrating it into your agent's decision-making pipeline, workflow orchestration, and state management).
 
 ---
 
