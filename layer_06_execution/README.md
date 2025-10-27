@@ -39,6 +39,7 @@ It implements a research-grade **L0–L7 validation pipeline** for safe, reprodu
 | `mac_executor.py`    | System-level executor for macOS file operations (open, copy, move, create) without GUI interaction. |
 | `test_ax_inspector.py` | Interactive click inspector—record UI element signatures for automation. |
 | `test_ax_execute.py` | Execution CLI—replay recorded steps with validation and diagnostics. |
+| `test_ax_keyboard.py` | Keyboard typing test — opens TextEdit and types sample text using AX-based key events (for future integration into full executor). |
 | `requirements.txt` | Dependencies (PyObjC, Quartz, AppKit). |
 | `INSTALL.md` | Setup guide and macOS permission configuration. |
 
