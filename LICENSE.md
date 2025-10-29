@@ -22,14 +22,4 @@ SOFTWARE.
 
 ---
 
-ATTRIBUTION REQUIREMENT:
-
-
-When redistributing or referencing this software (in full or in part):
-
-1. Retain this license file unmodified.
-2. Acknowledge: “Based on the Artificial Mind framework by Luis Lozano.”
-3. Include a link to the official repository:
-   https://github.com/luislozanogmia/artificial_mind
-
-This attribution helps maintain transparency across forks and derivative works.
+Attribution appreciated but not required.
