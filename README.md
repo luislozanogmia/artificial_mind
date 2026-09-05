@@ -1,3 +1,5 @@
+--NO LONGER ACTIVE SINCE HARNESSES REPLACED THIS PERSONAL WORK--
+
 # Artificial Mind — Open Source Layers
 
 A modular agentic AI framework for building reflection-first, validation-driven systems.
